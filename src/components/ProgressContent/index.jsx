@@ -13,13 +13,13 @@ const ProgressContent = (props) => {
             components.push(
                 <div className={style.element}>
                     <Row>
-                        <Col span={5}>
+                        <Col xs={24} sm={24} md={24} lg={5} xl={5}>
                             <span>
                                 {property}
                             </span>
                         </Col>
 
-                        <Col offset={1} span={17}>
+                        <Col xs={24} sm={24} md={24} lg={{span: 17, offset: 1}} xl={{span: 17, offset: 1}}>
                             <Progress showInfo={false} percent={data[property]} strokeColor={props.color} />
 
                         </Col>

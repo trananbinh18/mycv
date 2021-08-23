@@ -87,7 +87,9 @@ const ContentBody = () => {
             <CardWrapper>
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={11} xl={11}>
+                        <div className={style.objectiveWrapper}>
                         {objectiveData}
+                        </div>
                     </Col>
 
                     <Col xs={24} sm={24} md={24} lg={{span: 11, offset: 2}} xl={{span: 11, offset: 2}}>

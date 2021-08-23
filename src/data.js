@@ -8,6 +8,7 @@ export const skypeLinkData = ""
 
 export const linkedInLinkData = ""
 
+export const imageUrlData = "https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/34464120_1676301915823023_7409655915244158976_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=idzVjpaMnlsAX8z63Lg&_nc_ht=scontent.fsgn3-1.fna&oh=a63ac2ca79fbac1d52e9225308a6381f&oe=6148F3DE"
 
 export const tableData = {
     "DoB": "21/08/1997",

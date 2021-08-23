@@ -2,11 +2,11 @@ export const phoneNumberData = "+84 903 08 9143"
 
 export const emailData = "trananbinh18@gmail.com"
 
-export const gitHubLinkData = ""
+export const gitHubLinkData = "https://github.com/trananbinh18"
 
-export const skypeLinkData = ""
+export const skypeLinkData = "https://join.skype.com/invite/UCFRWuGobdX7"
 
-export const linkedInLinkData = ""
+export const linkedInLinkData = "https://www.linkedin.com/in/binh-tran-47566b1aa"
 
 export const imageUrlData = "https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/34464120_1676301915823023_7409655915244158976_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=idzVjpaMnlsAX8z63Lg&_nc_ht=scontent.fsgn3-1.fna&oh=a63ac2ca79fbac1d52e9225308a6381f&oe=6148F3DE"
 

@@ -8,7 +8,7 @@ const Background = (props) => {
         <div className={style.container}>
             <div className={style.containerTop}>
                 <Row justify="left">
-                    <Col offset={4} span={8}>
+                    <Col xs={{span:20, offset: 2}} sm={{span:20, offset: 2}} md={{span:20, offset: 2}} lg={{span:8, offset: 4}} xl={{span:8, offset: 4}}>
                         <div className={style.wrapper}>
                         <div className={style.myName}>
                             Binh Tran

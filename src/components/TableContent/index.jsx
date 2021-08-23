@@ -14,7 +14,7 @@ const TableContent = (props) => {
             components.push(
                 <Row key={property} className={style.element} justify="left">
                     <Col span={4}>{property}</Col>
-                    <Col span={20}>{data[property]}</Col>
+                    <Col offset={2} span={18}>{data[property]}</Col>
                 </Row>
             )
         }

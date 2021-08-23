@@ -1,0 +1,31 @@
+.container {
+    background-color: var(--color-background-primary);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.containerTop {
+    background-color: var(--color-secondary);
+    height: 30vh;
+    color: var(--color-text-secondary)
+}
+
+.wrapper {
+    margin-top: 5vh;
+    float: left;
+    text-align: left;
+}
+
+.myName {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.jobTitle {
+    font-weight: bold;
+    font-size: 17px;
+}

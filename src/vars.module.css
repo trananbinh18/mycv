@@ -1,0 +1,12 @@
+@value colorPrimary: white;
+@value colorSecondary: green;
+@value colorTextPrimary: black;
+@value colorTextSecondary: white;
+@value colorBackgroundPrimary: rgb(150, 150, 150);
+:root {
+    --color-primary: white;
+    --color-secondary: colorSecondary;
+    --color-text-primary: colorTextPrimary;
+    --color-text-secondary: colorTextSecondary;
+    --color-background-primary: colorBackgroundPrimary;
+}

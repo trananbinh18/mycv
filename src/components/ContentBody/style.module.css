@@ -1,0 +1,40 @@
+.container {
+    background-color: transparent;
+    padding-top: 20vh;
+}
+
+.badgeContainer {
+    background-color: var(--color-secondary);
+}
+
+.avatar {
+    width: 100%;
+}
+
+.introduceName span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.introduceName span:nth-child(2) {
+    color: var(--color-secondary);
+}
+
+.jobTitle {
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.iconList {
+    float: right;
+}
+
+.backToTop {
+    line-height: '40px';
+    border-radius: 4px;
+    background-color: var(--color-secondary);
+    color: var(--color-text-secondary);
+    text-align: 'center';
+    font-size: 30px;
+}

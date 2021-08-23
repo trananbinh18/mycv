@@ -8,7 +8,7 @@ import SectionTitle from '../SectionTitle'
 import ProgressContent from '../ProgressContent'
 import { colorSecondary, colorTextSecondary } from '../../vars.module.css'
 import TimeLine from '../TimeLine'
-import { imageUrlData, tableData, progressData, objectiveData, timeLineData, phoneNumberData, emailData, gitHubLinkData, linkedInLinkData } from '../../data'
+import { imageUrlData, tableData, progressData, objectiveData, timeLineData, phoneNumberData, emailData, gitHubLinkData, linkedInLinkData, skypeLinkData } from '../../data'
 import { BackTop } from 'antd';
 import { VerticalAlignTopOutlined } from '@ant-design/icons';
 
@@ -48,7 +48,7 @@ const ContentBody = () => {
 
                                 <div className={style.iconList}>
                                     <Space>
-                                        <a href="" target="_blank">
+                                        <a href={gitHubLinkData} target="_blank">
                                             <Avatar style={styleColorIcon} shape="square" size="large" icon={<GithubOutlined />} />
                                         </a>
 
@@ -64,7 +64,7 @@ const ContentBody = () => {
                                             <Avatar style={styleColorIcon} shape="square" size="large" icon={<LinkedinOutlined />} />
                                         </a>
 
-                                        <a href={gitHubLinkData} target="_blank">
+                                        <a href={skypeLinkData} target="_blank">
                                             <Avatar style={styleColorIcon} shape="square" size="large" icon={<SkypeOutlined />} />
                                         </a>
                                     </Space>

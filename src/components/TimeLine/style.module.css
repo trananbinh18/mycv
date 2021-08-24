@@ -27,3 +27,11 @@
     margin-top: 10px;
     font-weight: bold;
 }
+
+.contentList li {
+    margin-top: 10px;
+}
+
+.contentList {
+    list-style-type: square;
+}

@@ -9,19 +9,19 @@ const TimeLine = (props) => {
 
     const getComponentsTimelineItem = () => {
         let components = []
-    
+
         for (const property in data) {
             let iconStyle = { fontSize: "25px", padding: "10px", color: color }
             let icon = (<CheckSquareFilled style={iconStyle} />)
             let tech = []
-    
-    
-    
-    
+
+
+
+
             switch (data[property].type) {
                 case "Education":
                     icon = (<ReadFilled style={iconStyle} />)
-    
+
                     break;
                 case "Work":
                     icon = (<HomeFilled style={iconStyle} />)
@@ -31,13 +31,13 @@ const TimeLine = (props) => {
                     tech = data[property].tech.map(element => {
                         return (<Tag color={color}>{element}</Tag>)
                     })
-    
+
                     break;
                 default:
                     break;
-    
+
             }
-    
+
             components.push(
                 <Tooltip title={`${data[property].time} ${property}`} >
                     <Timeline.Item dot={icon} >
@@ -46,7 +46,14 @@ const TimeLine = (props) => {
                                 <span className={style.time}>{data[property].time}</span>
                                 <div className={style.title}>{property}</div>
                             </div>
-                            {data[property].content}
+                            <ul className={style.contentList}>
+                                {data[property].content.map(element => (
+                                    <li>
+                                        {element}
+                                    </li>
+
+                                ))}
+                            </ul>
                             <div className={style.tagWrapper}>
                                 {tech}
                             </div>
@@ -55,7 +62,7 @@ const TimeLine = (props) => {
                 </Tooltip>
             )
         }
-    
+
         return components
     }
 

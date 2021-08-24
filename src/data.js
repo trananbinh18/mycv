@@ -37,7 +37,7 @@ export const timeLineData = {
     "Graduate Van Lang University": { type: "Education", time: "14/09/2019", content: ["Graduate from University"] },
 
     "Join Nashtech as fresher": { type: "Work", time: "19/06/2019 ~ 20/08/2019", content: ["Training .NET CORE and React js"] },
-    "Project: Estate Investment": { type: "Project", tech: ["ASP.NET CORE", "Entity Framework Core", "React JS"], time: "12/07/2011", content: ["Build website investing estate project", "Reasearch about .NET Core and React JS", "Research about Code First approach using migration"] },
+    "Project: Estate Investment": { type: "Project", tech: ["ASP.NET CORE", "Entity Framework Core", "React JS"], time: "12/07/2019", content: ["Build website investing estate project", "Reasearch about .NET Core and React JS", "Research about Code First approach using migration"] },
 
 
     "Join Assure Global Group as Developer": { type: "Work", time: "27/08/2019 ~ now", content: ["Join Assure Global Group company"] },

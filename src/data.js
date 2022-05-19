@@ -12,7 +12,7 @@ export const imageUrlData = "https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/
 
 export const tableData = {
     "DoB": "21/08/1997",
-    "Address": "425 Pham Van Chieu street, 14 sub-district, Go Vap district",
+    "Address": "None",
     "Email": emailData,
     "Phone": phoneNumberData,
 }

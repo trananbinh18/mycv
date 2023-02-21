@@ -8,7 +8,7 @@ export const skypeLinkData = "https://join.skype.com/invite/UCFRWuGobdX7"
 
 export const linkedInLinkData = "https://www.linkedin.com/in/binh-tran-47566b1aa"
 
-export const imageUrlData = "https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/34464120_1676301915823023_7409655915244158976_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=idzVjpaMnlsAX8z63Lg&_nc_ht=scontent.fsgn3-1.fna&oh=a63ac2ca79fbac1d52e9225308a6381f&oe=6148F3DE"
+export const imageUrlData = "https://scontent.fsgn8-3.fna.fbcdn.net/v/t31.18172-8/28061080_1565505990235950_3845251402004657671_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=brjXVrIBT64AX_Si-Im&tn=Ngh6Xh50_AkXQmWQ&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfCmuim8H4eksoPGGhk36z0Jx3bQcZFb3XdTcGsP9T3k3A&oe=641C3D1E"
 
 export const tableData = {
     "DoB": "21/08/1997",

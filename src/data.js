@@ -11,7 +11,7 @@ export const linkedInLinkData = "https://www.linkedin.com/in/binh-tran-47566b1aa
 export const imageUrlData = "https://scontent.fsgn8-3.fna.fbcdn.net/v/t31.18172-8/28061080_1565505990235950_3845251402004657671_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=brjXVrIBT64AX_Si-Im&tn=Ngh6Xh50_AkXQmWQ&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfCmuim8H4eksoPGGhk36z0Jx3bQcZFb3XdTcGsP9T3k3A&oe=641C3D1E"
 
 export const tableData = {
-    "DoB": "21/08/1997",
+    "DoB": "01/01/1997",
     "Address": "None",
     "Email": emailData,
     "Phone": phoneNumberData,

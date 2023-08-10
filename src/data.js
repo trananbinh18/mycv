@@ -1,4 +1,4 @@
-export const phoneNumberData = "+84 903 08 9143"
+export const phoneNumberData = "+84 000 00 0000"
 
 export const emailData = "trananbinh18@gmail.com"
 

@@ -3,10 +3,17 @@
 @value colorTextPrimary: black;
 @value colorTextSecondary: white;
 @value colorBackgroundPrimary: rgb(150, 150, 150);
+@value colorEducation: blue;
+@value colorProject: red;
+@value colorWork: gray;
 :root {
     --color-primary: white;
     --color-secondary: colorSecondary;
     --color-text-primary: colorTextPrimary;
     --color-text-secondary: colorTextSecondary;
     --color-background-primary: colorBackgroundPrimary;
+    --color-education: colorEducation;
+    --color-project: colorProject;
+    --color-work: colorWork;
+
 }

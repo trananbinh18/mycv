@@ -1,7 +1,10 @@
 import React from 'react'
 import { Timeline, Button, Tooltip, Tag } from 'antd';
 import { CheckSquareFilled, ReadFilled, HomeFilled, ProjectFilled } from '@ant-design/icons';
+import Icon from "@ant-design/icons"
 import style from './style.module.css';
+import { ReactComponent as PeopleIcon } from "../../svg/people.svg";
+import {iconMap} from "../../iconMap.js"
 
 const TimeLine = (props) => {
     const data = props.data
@@ -15,34 +18,36 @@ const TimeLine = (props) => {
             let icon = (<CheckSquareFilled style={iconStyle} />)
             let tech = []
 
-
-
-
             switch (data[property].type) {
-                case "Education":
-                    icon = (<ReadFilled style={iconStyle} />)
-
-                    break;
                 case "Work":
                     icon = (<HomeFilled style={iconStyle} />)
                     break;
                 case "Project":
                     icon = (<ProjectFilled style={iconStyle} />)
-                    tech = data[property].tech.map(element => {
-                        return (<Tag color={color}>{element}</Tag>)
+                    tech = data[property].tech.sort((a, b) => a > b).map(element => {
+                        return (<Tag className={style.techTag} icon={<Icon component={iconMap[element]} />} color={color}>{element}</Tag>)
                     })
-
                     break;
                 default:
                     break;
 
             }
 
+
             components.push(
                 <Tooltip title={`${data[property].time} ${property}`} >
                     <Timeline.Item dot={icon} >
-                        <div className={style.contentWrapper}>
+                        {(data[property].type == "Work") ? 
+                        (
+                            <div className={style.contentHeaderWork}>
+                                <span className={style.time}>{data[property].time}</span>
+                                <span className={style.title}>{property}</span>
+                            </div>
+                        )
+                        : 
+                        (<div className={style.contentWrapper}>
                             <div className={style.contentHeader}>
+                                {data[property].teamSize ? <Tooltip title="Team size"><span className={style.peopleIcon}><Icon component={PeopleIcon} /> <span>{data[property].teamSize}</span></span></Tooltip> : ""}
                                 <span className={style.time}>{data[property].time}</span>
                                 <div className={style.title}>{property}</div>
                             </div>
@@ -51,13 +56,13 @@ const TimeLine = (props) => {
                                     <li>
                                         {element}
                                     </li>
-
                                 ))}
                             </ul>
                             <div className={style.tagWrapper}>
                                 {tech}
                             </div>
-                        </div>
+                        </div>)
+                        } 
                     </Timeline.Item>
                 </Tooltip>
             )
@@ -68,7 +73,7 @@ const TimeLine = (props) => {
 
 
     return (
-        <Timeline pending="To be continute..." mode="left">
+        <Timeline reverse pending="To be continute..." mode="left">
             {getComponentsTimelineItem()}
         </Timeline>
     )

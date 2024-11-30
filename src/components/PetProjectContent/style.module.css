@@ -1,0 +1,22 @@
+.icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.iconLink svg {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Aligns the title and icon vertically */
+    gap: 8px; /* Adds space between title and icon */
+}

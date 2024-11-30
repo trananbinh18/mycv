@@ -1,70 +1,386 @@
-export const phoneNumberData = "+84 000 00 0000"
+export const phoneNumberData = "+84 000 00 0000";
 
-export const emailData = "trananbinh18@gmail.com"
+export const emailData = "trananbinh18@gmail.com";
 
-export const gitHubLinkData = "https://github.com/trananbinh18"
+export const gitHubLinkData = "https://github.com/trananbinh18";
 
-export const skypeLinkData = "https://join.skype.com/invite/UCFRWuGobdX7"
+export const skypeLinkData = "https://join.skype.com/invite/UCFRWuGobdX7";
 
-export const linkedInLinkData = "https://www.linkedin.com/in/binh-tran-47566b1aa"
+export const linkedInLinkData =
+  "https://www.linkedin.com/in/binh-tran-47566b1aa";
 
-export const imageUrlData = "https://scontent.fsgn8-3.fna.fbcdn.net/v/t31.18172-8/28061080_1565505990235950_3845251402004657671_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=brjXVrIBT64AX_Si-Im&tn=Ngh6Xh50_AkXQmWQ&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfCmuim8H4eksoPGGhk36z0Jx3bQcZFb3XdTcGsP9T3k3A&oe=641C3D1E"
+export const imageUrlData =
+  "https://scontent.fsgn8-3.fna.fbcdn.net/v/t31.18172-8/28061080_1565505990235950_3845251402004657671_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=brjXVrIBT64AX_Si-Im&tn=Ngh6Xh50_AkXQmWQ&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfCmuim8H4eksoPGGhk36z0Jx3bQcZFb3XdTcGsP9T3k3A&oe=641C3D1E";
 
 export const tableData = {
-    "DoB": "01/01/1997",
-    "Address": "None",
-    "Email": emailData,
-    "Phone": phoneNumberData,
-}
+  DoB: "01/01/1997",
+  Address: "None",
+  Email: emailData,
+  Phone: phoneNumberData,
+};
 
 export const progressData = {
-    "English": 70,
-    "Font-End": 70,
-    "Back-End": 80,
-}
+  English: 70,
+  "Font-End": 70,
+  "Back-End": 80,
+};
 
 export const objectiveData = `
-Learning more, improve myself by doing and consume. To be a part of organization that provides an atmosphere of mutual growth and benefits, where I could use and enhance my skills and knowledge
-for the development of organization, as well as myself. Become an useful and responsible person and be successful person in work and social communication.
-`
+A dedicated and adaptable Software Engineer with strong skills in C#, experienced in backend development and solving complex problems. Additionally skilled in JavaScript and Android (Java), with a focus on backend engineering. Familiar in CI/CD pipelines using Jenkins and Docker, with intermediate English communication skills for effective collaboration. Passionate about technology, eager to learn and adopt new tools and frameworks. Known for being a quick learner, friendly, and committed to contributing to innovative projects.
+`;
+
+export const languageSkills = [
+  "C#",
+  "SQL Query",
+  "Javascript",
+  "Typescript",
+  "Java",
+  "ASP.NET",
+  "SignalR",
+  "Dapper",
+  "EF core",
+  "React JS",
+  "VueJS",
+  "Android",
+];
+
+export const toolSkills = ["Jenkins", "Docker", "Ubuntu", "Nginx"];
+
+export const beginnerSkills = ["AWS", "Azure"];
+
+export const educationData = {
+  "Van Lang University": {
+    type: "Education",
+    time: "21/07/2015 ~ 14/09/2019",
+    content: [
+      "Major: Software Engineer",
+      "Graduation thesis: Build Integration System for control and implement teaching plan for Van Lang University",
+    ],
+  },
+};
 
 export const timeLineData = {
-    "Join Van Lang University": { type: "Education", time: "21/07/2015", content: ["Begin University with major solfware engineer"] },
-    // "Self Project: One Two Three Game": { type: "Project", time: "22/03/2016", tech: ["C#", ".NET", "SQLite", "UWP"], content: ["Work as Developer", "Build Simple project based on One Two Three traditional game run on UWP", "Research about UW Platform and how the flow work on UWP app", "Find out Logic flow to made the game work right"] },
-    // "Project: PPC Rental": { type: "Project", time: "20/03/2017", tech: ["C#", "ASP.NET", "MSSQL", "JQuery", "Entity Framework"], content: ["Work as Developer, Team size: 5 member", "Build website help Agency can advertise their estate", "Design UI/UX for website", "Research and implement JQuery, ASP.NET MVC, Entity Framework", "Using html, css, javascript to build font-side"] },
-    // "Project: Fresh Food": { type: "Project", time: "13/06/2018", tech: ["PHP", "Laravel", "MySQL", "QueryBuilder"], content: ["Work as Developer, Team size: 5 member", "Build eCommerce website selling Fresh Food", "Research about PHP and Lavarel Framework and transfer to team member ", "Design Database", "Implement features workflow for back-end side"] },
-    "Project: Education Program Management": { type: "Project", time: "21/02/2019 ~ 24/08/2019", tech: ["ASP.NET", "MSSQL", "JQuery", "Entity Framework"], content: ["Work as Developer, Architect, Team size: 6 member", "Build Inregration System for control and implement teaching plan for Van Lang University", "Design Database", "Scaling features during receive new requirements made database scaling and perform so bad, So that re-stucture and re-design database", "Using JQuery to made page like SPA got better UX", "Increase performance by using store procedure", "Made realtime notification feature"] },
-    "Graduate Van Lang University": { type: "Education", time: "14/09/2019", content: ["Graduate from University"] },
+  "Join Assure Global Group as Developer": {
+    type: "Work",
+    time: "27/08/2019 ~ 05/08/2021",
+  },
+  "Project: Wojit Website": {
+    type: "Project",
+    teamSize: 6,
+    time: "28/08/2019 ~ 07/02/2020",
+    tech: ["Pure PHP", "MySQL", "MVC", "Smarty"],
+    content: [
+      "CMS for Wojit school",
+      "Implement pure PHP with MVC design pattern",
+      "Manage customer list and filter by specific criteria",
+      "Role base Authenticate and Authorize",
+      "Handle multilanguage",
+      "Made landing page for online marketing purpose",
+    ],
+  },
+  "Project: AGG's Games": {
+    type: "Project",
+    time: "12/02/2020",
+    tech: ["Java", "Android SDK"],
+    teamSize: 4,
+    content: [
+      "Work as Developer",
+      "Develop games for AGG systems: Flappy Bird, 2048, Tetrix, Timberman",
+      "Updating UI/UX to fit requirement",
+      "Find out rendering flow to made the game work right",
+    ],
+  },
+  "Project: AGG's Utility App": {
+    type: "Project",
+    teamSize: 10,
+    time: "02/03/2020 ~ 05/08/2021",
+    tech: ["Java", "Android SDK"],
+    content: [
+      "Develop Apps and Widgets: Currency, Weather, News",
+      "Updating UI/UX to fit requirement",
+    ],
+  },
 
-    "Join Nashtech as fresher": { type: "Work", time: "19/06/2019 ~ 20/08/2019", content: ["Training .NET CORE and React js"] },
-    "Freelance Project: Estate Investment": { type: "Project", tech: ["ASP.NET CORE", "Entity Framework Core", "React JS"], time: "12/07/2019", content: ["Work as Developer", "Build website investing estate project", "Reasearch about .NET Core and React JS", "Research about Code First approach using migration"] },
+  "Join Altsource software as Full-stack Developer": {
+    type: "Work",
+    time: "27/09/2021 ~ 15/05/2023",
+  },
+  "Project: Northwest Distribution": {
+    type: "Project",
+    teamSize: 6,
+    time: "27/09/2021 ~ 08/04/2022",
+    tech: ["C#", ".NET", "MSSQL", "VueJS", "Typescript", "SOLID", "EF core"],
+    content: [
+      "System manage warehouse for logistics company",
+      "Implement VueJS, typescript and SOLID",
+      "Plug and play concept, to use scanner devices",
+      "Export report to PDF",
+    ],
+  },
+  "Project: Arcadia Drilling": {
+    type: "Project",
+    teamSize: 6,
+    time: "08/04/2022 ~ 15/05/2023",
+    tech: [
+      "C#",
+      ".NET",
+      "MSSQL",
+      "VueJS",
+      "Typescript",
+      "Azure Pipeline",
+      "EF core",
+    ],
+    content: [
+      "System manage work orders for the drilling service company",
+      "Making window service, to sync data with API",
+      "Implement build scripts for Services using Azure Pipeline",
+    ],
+  },
+  "Project: My Fertility Health": {
+    type: "Project",
+    teamSize: 6,
+    time: "13/05/2022 ~ 15/05/2023",
+    tech: [
+      "C#",
+      ".NET",
+      "MSSQL",
+      "React JS",
+      "Typescript",
+      "Azure Pipeline",
+      "EF core",
+    ],
+    content: [
+      "Application provide fertility patients with a convenient way to track their treatment protocols throughout the entire life span of their fertility journey",
+      "Implement cross platform app using Ionic Framework",
+      "Purchase the App through App store",
+    ],
+  },
 
+  "Join Blogic Systems as Backend Developer": {
+    type: "Work",
+    time: "01/06/2023 ~ now",
+  },
 
-    "Join Assure Global Group as Developer": { type: "Work", time: "27/08/2019 ~ 05/08/2021", content: ["Join Assure Global Group company"] },
-    "Project: Wojit Website": { type: "Project", time: "28/08/2019 ~ 07/02/2020", tech: ["Pure PHP", "MySQL", "MVC"], content: ["Work as Developer, Team size: 6 member", "CMS for Wojit school", "Implement pure PHP with MVC design pattern", "Manage customer list and filter by specific criteria", "Role base Authenticate and Authorize", "Using Smarty to handle multilanguage", "Made landing page for online marketing purpose"] },
-    "Project: Timberman game": { type: "Project", time: "08/02/2020", tech: ["Java", "Android SDK"], content: ["Work as Developer", "Game Timberman 2D for android", "Find out Logic flow to made the game work right"] },
-    "Project: Flappy Bird game": { type: "Project", time: "12/02/2020", tech: ["Java", "Android SDK"], content: ["Work as Developer", "Game Flappy Bird 2D for android", "Find out Logic flow to made the game work right"] },
-    "Project: 2048 game": { type: "Project", time: "15/02/2020", tech: ["Java", "Android SDK"], content: ["Work as Developer", "Game 2048 for android", "Find out Logic flow to made the game work right"] },
-    "Project: Tetrix game": { type: "Project", time: "19/02/2020", tech: ["Java", "Android SDK"], content: ["Work as Developer", "Game Tetrix for android", "Find the opensource game and modify UI, gameplay to fit requirement"] },
+  "Project: Sensa Booking APIs": {
+    type: "Project",
+    time: "01/06/2023",
+    teamSize: 5,
+    content: [
+      "A booking platform for nail and beauty salons. It allows customers to book appointments online, and salons to manage their business.",
+      "Implement APIs for web/app clients",
+      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, usability",
+      "Handle backgrounds and schedule jobs",
+      "Implement CI/CD by jenkins",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "Dapper",
+      "MSSQL",
+      "Hangfire",
+      "Docker",
+      "Jenkins",
+      "AutoMapper",
+      "SignalR",
+    ],
+  },
+  "Project: Sensa Pay": {
+    type: "Project",
+    time: "01/09/2023",
+    teamSize: 3,
+    content: [
+      "A mobile app running on PAX POS devices integrate booking platform, it allow the store to process appointment payments.",
+      "Integrate with PAX to process card payments",
+      "Handle Records and report",
+    ],
+    tech: ["Java", "Android SDK", "PAX"],
+  },
+  "Project: POS Express APIs": {
+    type: "Project",
+    time: "12/10/2023",
+    teamSize: 6,
+    content: [
+      "A project to manage payment transactions and employees, profit statistic report base on processed transactions",
+      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, security",
+      "Archive to support up to 2,000 concurrent users",
+      "Implement authentication và authorization",
+      "Implement CI/CD by jenkins",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "Dapper",
+      "MSSQL",
+      "AutoMapper",
+      "Docker",
+      "Jenkins",
+    ],
+  },
+  "Project: Data center menu builder APIs": {
+    type: "Project",
+    time: "15/11/2023",
+    teamSize: 7,
+    content: [
+      "POS is a project having 10 year life time, it allow users can manage their restaurant menu, POS is handle locally and independence. Menu Builder APIs initial by requirements help user can edit their menu directly on website without need to access to local.",
+      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, security",
+      "Handle sync large data from local to server",
+      "Handle rollback",
+      "Reduce in-memory resources, request payload",
+      "Integrate with AWS S3 + CDN Cloud Front",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "Dapper",
+      "MSSQL",
+      "Docker",
+      "Jenkins",
+      "Winform",
+      "AWS",
+      "AutoMapper",
+    ],
+  },
+  "Project: Giftcard and SMS APIs": {
+    type: "Project",
+    time: "15/11/2023",
+    teamSize: 3,
+    content: [
+      "Manage gift cards systems, statistic report all transactions relate to gift cards",
+      "Manage sms APIs using plivo third party services to send SMS",
+      "Design to archive functional requirement",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "MSSQL",
+      "Dapper",
+      "Docker",
+      "Jenkins",
+      "Plivo",
+      "AutoMapper",
+    ],
+  },
+  "Project: Authentication APIs": {
+    type: "Project",
+    time: "22/04/2024",
+    teamSize: 7,
+    content: [
+      "Centralized Authentication systems, provide credentials cross multiple systems",
+      "Support multiple authorized type JWT RSA256, API keys, stateful sessions",
+      "Authenticate and Authorize",
+      "Handle account cross multiple systems",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "MSSQL",
+      "Dapper",
+      "Docker",
+      "Jenkins",
+      "AutoMapper",
+    ],
+  },
+  "Project: Dapper Bulks Library": {
+    type: "Project",
+    time: "05/02/2024",
+    teamSize: 1,
+    content: [
+      "Project base on KostovMartin/Dapper.Bulk open source library, extent some methods handle multiple records improve performance",
+      "Only support MSSQL",
+      "Bulk update",
+      "Select multiple records > 200 records by IDs",
+    ],
+    tech: [".NET", "MSSQL"],
+  },
+};
 
-    "Project: Currency": { type: "Project", time: "02/03/2020 ~ 05/08/2021", tech: ["Java", "Android SDK", "Signleton"], content: ["Work as Developer, Team size: 10 member", "Build App and Widget for tracking exchange rate for currency", "Updating UI/UX to fit requirement", "Research about Widget work flow in android system", "Implement Signleton pattern", "Implement callback interface per-action", "Using HTTP Client Retrofit"] },
-    "Project: Weather": { type: "Project", time: "02/03/2020 ~ 05/08/2021", tech: ["Java", "Android SDK", "Signleton"], content: ["Work as Developer, Team size: 10 member", "Build App and Widget for weather forecast", "Updating UI/UX to fit requirement", "Implement Signleton pattern", "Implement callback interface per-action", "Implement HTTP Client Retrofit"] },
-    "Project: News": { type: "Project", time: "02/03/2020 ~ 05/08/2021", tech: ["Java", "Android SDK", "Signleton"], content: ["Work as Developer, Team size: 10 member", "Build App for fetching newspager", "Updating UI/UX to fit requirement", "Implement Signleton pattern", "Implement callback interface per-action", "Implement HTTP Client Retrofit"] },
+export const petProjects = {
+  "Smart Home": {
+    projects: [
+      {
+        name: "Home Assistant",
+        link: "https://github.com/home-assistant",
+        content: [
+          "Is free and open-source software used for home automation. It serves as an integration platform and smart home hub, allowing me to control smart home devices.",
+        ],
+      },
+      {
+        name: "MQTT",
+        link: "https://github.com/mqtt",
+        content: [
+          "Is a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. I'm use it control some smart devices via home assistant",
+        ],
+      },
+    ],
+  },
 
-    "Freelance Project: Phistu": { type: "Project", time: "22/09/2020", tech: ["Wordpress", "PHP"], content: ["Work as Developer", "Build website for school", "Using HTML, CSS, JS to update web font-side", "Reading implementation of wordpress theme to edit PHP code"] },
-    "Self Project: Give and Get App": { type: "Project", time: "27/09/2020", tech: ["C#", "Java", "Android SDK", "ASP.NET", "MSSQL"], content: ["Work as Developer", "Website and app social network for giving and getting stuff", "Find the way to store Image in database", "Research Notification work flow android system"] },
-    "Freelance Project: LMS Canvas": { type: "Project", time: "12/11/2020 ~ 23/05/2021", tech: ["Kotlin", "Android SDK", "Docker", "AWS EC2"], content: ["Work as Developer, Dev-Op Team size: 4 member", "Opensource LMS for monitor, manage, operate all about learning stuff for K12 school", "Reading code from LMS applications and modify it to fit requirements", "Research Dart, Flutter and Kotlin to understand the app structure and modify to fit requirement", "Using AWS EC2 to deploy, config and setup web-server", "Research about OAuth 2", "Deploy and setup keycloak Identity server open-source", "Using docker to deploy system in containers"] },
-    "Self Project: Tablog": { type: "Project", time: "27/07/2021 ~ now", tech: ["React JS", "Redux ToolKit", "RTK Query", "ASP.NET Core", "Entity Framework Core"], content: ["Work as Developer", "Build Personal Blog", "Implement DI, Mediator, Repository, CQRS pattern", "Research about Fluent API", "Using LinQ to transform to DTO", "Research about Redux toolkit and RTK Query"] },
-    "Self Project: Discord Chat bot": { type: "Project", time: "13/01/2023 ~ 16/01/2023", tech: ["NoteJS", "DiscordJS", "ChatGPT"], content: ["Work as Developer", "Build Discord Bot to communicate with ChatGPT", "Implement by using feature completion conversation of ChatGPT, So we can set roles for Bot and conversation context"] },
-
-
-    "Altsource software as Full-stack Developer": { type: "Work", time: "27/09/2021 ~ now", content: ["Join Altsource software company"] },
-    "Project: Northwest Distribution": { type: "Project", time: "27/09/2021 ~ 08/04/2022", tech: ["C#",".NET Core", "MSSQL", "VueJS","Typescript","SOLID, Entity Framework core"], content: ["Work as Developer, Team size: 6 members", "System manage warehouse for logistics company", "Implement VueJS, typescript and SOLID", "Plug and play concept, to use scanner devices", "Export report to PDF"] },
-    "Project: Arcadia Drilling": { type: "Project", time: "08/04/2022 ~ now", tech: ["C#",".NET Core", "MSSQL", "VueJS","Typescript","Azure Pipeline", "Entity Framework core"], content: ["Work as Developer, Team size: 6 members", "System manage work orders for the drilling service company", "Making window service, to sync data with API", "Implement build scripts for Services using Azure Pipeline"] },
-    "Project: My Fertility Health": { type: "Project", time: "13/05/2022 ~ now", tech: ["C#",".NET Core", "MSSQL", "React JS","Typescript", "Azure Pipeline", "Entity Framework core"], content: ["Work as Developer, Team size: 6 members", "Application provide fertility patients with a convenient way to track their treatment protocols throughout the entire life span of their fertility journey", "Implement cross platform app using Ionic Framework", "Purchase the App through App store"] },
-
-
-
-
-
-}
+  "Media Server": {
+    projects: [
+      {
+        name: "Jellyfin",
+        link: "https://github.com/jellyfin/jellyfin",
+        content: [
+          "Free Software Media System that puts me in control of managing and streaming my media.",
+        ],
+      },
+      {
+        name: "Arr's Family",
+        link: "https://github.com/Sonarr",
+        content: [
+          "Arr's Family includes: Sonarr, Radarr, Prowlarr",
+          "Sonarr & Radarr: a movie/tv show collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them.",
+          "Prowlarr: Prowlarr is an indexer manager/proxy built on the popular arr's family integrate with my various PVR apps. Prowlarr supports management of both Torrent Trackers and Usenet Indexers.",
+        ],
+      },
+      {
+        name: "Jellyseerr",
+        link: "https://github.com/Fallenbagel/jellyseerr",
+        content: [
+          "A web server application for managing requests for my media library. It integrates with my Arr's family",
+        ],
+      },
+    ],
+  },
+  "Cloud Drive Storages": {
+    projects: [
+      {
+        link: "https://github.com/nextcloud",
+        name: "NextCloud",
+        content: [
+          "Is a suite of client-server software for creating and using file hosting services. Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive.",
+        ],
+      },
+    ],
+  },
+  Blog: {
+    projects: [
+      {
+        name: "TABLOG",
+        link:"https://tablog18.com",
+        content: [
+          "My personal blog site tend to share what i had been learned.",
+        ],
+      },
+    ],
+  },
+  Networks: {
+    projects: [
+      {
+        name: "Cloudflare Zero Trust",
+        link: "https://www.cloudflare.com/lp/ppc/zero-trust-network-access-x",
+        content: [
+          "Cloudflare's suite of security features that implement the 'Zero Trust' security model",
+          "Gateway with WARP",
+          "Tunnels proxy to port forwarding",
+        ],
+      },
+      {
+        name: "Ad-guard",
+        link: "https://github.com/AdguardTeam/AdGuardHome",
+        content: [
+          "DNS server Blocking ads & tracking, can use to define some local domains",
+        ],
+      },
+    ],
+  },
+};

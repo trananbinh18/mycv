@@ -1,16 +1,19 @@
 import React from 'react'
 import style from './style.module.css'
 import CardWrapper from '../CardWrapper'
-import { Progress, Row, Col, Divider, Badge, Avatar, Space, Button } from 'antd'
+import { Row, Col, Divider, Badge, Avatar, Space, Tag, Card } from 'antd'
+import Icon from "@ant-design/icons"
 import TableContent from '../TableContent'
 import { GithubOutlined, MailOutlined, PhoneOutlined, LinkedinOutlined, SkypeOutlined } from '@ant-design/icons'
 import SectionTitle from '../SectionTitle'
 import ProgressContent from '../ProgressContent'
 import { colorSecondary, colorTextSecondary } from '../../vars.module.css'
 import TimeLine from '../TimeLine'
-import { imageUrlData, tableData, progressData, objectiveData, timeLineData, phoneNumberData, emailData, gitHubLinkData, linkedInLinkData, skypeLinkData } from '../../data'
+import { imageUrlData, tableData, objectiveData, timeLineData, phoneNumberData, emailData, gitHubLinkData, linkedInLinkData, skypeLinkData, languageSkills, toolSkills, beginnerSkills, petProjects } from '../../data'
+import { iconMap } from "../../iconMap.js"
 import { BackTop } from 'antd';
 import { VerticalAlignTopOutlined } from '@ant-design/icons';
+import PetProjectContent from '../PetProjectContent'
 
 
 
@@ -19,6 +22,13 @@ import { VerticalAlignTopOutlined } from '@ant-design/icons';
 const styleColorIcon = { color: colorTextSecondary, backgroundColor: colorSecondary }
 
 const ContentBody = () => {
+    const getTechComponents = (skills) => {
+        return skills.map(element => {
+            return (<Tag className={style.techTag} icon={<Icon component={iconMap[element]} />} color={colorSecondary}>{element}</Tag>)
+        })
+    }
+
+
     return (
         <div className={style.container}>
 
@@ -33,8 +43,8 @@ const ContentBody = () => {
                             <img className={style.avatar} src={imageUrlData} />
                         </Col>
 
-                        <Col xs={24} sm={{span:24, offset: 0}} md={{span:24, offset: 0}} lg={{span:12, offset: 2}} xl={{span:12, offset: 2}} >
-                            <div className={style.introWrapper}> 
+                        <Col xs={24} sm={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 2 }} xl={{ span: 12, offset: 2 }} >
+                            <div className={style.introWrapper}>
                                 <div className={style.introduceName}>
                                     <span>I'M</span> <span>BINH TRAN</span>
                                 </div>
@@ -88,12 +98,23 @@ const ContentBody = () => {
                 <Row>
                     <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                         <div className={style.objectiveWrapper}>
-                        {objectiveData}
+                            {objectiveData}
                         </div>
                     </Col>
 
-                    <Col xs={24} sm={24} md={24} lg={{span: 11, offset: 2}} xl={{span: 11, offset: 2}}>
-                        <ProgressContent color={colorSecondary} data={progressData} />
+                    <Col xs={24} sm={24} md={24} lg={{ span: 11, offset: 2 }} xl={{ span: 11, offset: 2 }}>
+                        <Row>
+                            <Col xs={24} sm={24} md={24}><h4>Languages and Frameworks</h4></Col>
+                            <Col xs={24} sm={24} md={24}>{getTechComponents(languageSkills)}</Col>
+                        </Row>
+                        <Row style={{ marginTop: 7 }}>
+                            <Col xs={24} sm={24} md={24}><h4>Tools</h4></Col>
+                            <Col xs={24} sm={24} md={24}>{getTechComponents(toolSkills)}</Col>
+                        </Row>
+                        <Row style={{ marginTop: 7 }}>
+                            <Col xs={24} sm={24} md={24}><h4>Beginner</h4></Col>
+                            <Col xs={24} sm={24} md={24}>{getTechComponents(beginnerSkills)}</Col>
+                        </Row>
                     </Col>
 
                 </Row>
@@ -103,12 +124,17 @@ const ContentBody = () => {
 
             {/* Education and work */}
 
-            <SectionTitle title="MY TIME LINE" />
+            <SectionTitle title="WORK EXPERIENCE" />
 
             <CardWrapper>
-
                 <TimeLine color={colorSecondary} data={timeLineData} />
+            </CardWrapper>
 
+            {/* PET Project  */}
+            <SectionTitle title="PET PROJECTS" />
+
+            <CardWrapper>
+                <PetProjectContent data={petProjects}/>
             </CardWrapper>
 
 

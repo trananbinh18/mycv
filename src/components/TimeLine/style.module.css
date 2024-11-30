@@ -11,7 +11,7 @@
 }
 
 .contentHeader {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .contentHeader .time {
@@ -28,6 +28,27 @@
     font-weight: bold;
 }
 
+.contentHeaderWork {
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;}
+
+.contentHeaderWork .time {
+    border: 1px var(--color-secondary) solid;
+    color: var(--color-text-secondary);
+    background-color: var(--color-secondary);
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.contentHeaderWork .title {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 .contentList li {
     margin-top: 10px;
 }
@@ -35,3 +56,29 @@
 .contentList {
     list-style-type: square;
 }
+
+.peopleIcon {
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    float: right;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.peopleIcon svg {
+    font-size: 30px;
+}
+
+
+.techTag svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.techTag .anticon {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+

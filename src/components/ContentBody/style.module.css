@@ -93,3 +93,28 @@
   vertical-align: middle;
   line-height: normal;
 }
+  
+  .tagWrapper {
+    margin-top: 10px;
+  }
+  
+  .contentHeader {
+    margin-bottom: 10px;
+  }
+  
+  .contentHeader .time {
+    border: 1px var(--color-secondary) solid;
+    color: var(--color-text-secondary);
+    background-color: var(--color-secondary);
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .contentHeader .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }

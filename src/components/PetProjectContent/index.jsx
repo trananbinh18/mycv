@@ -11,7 +11,7 @@ const PetProjectContent = (props) => {
         let components = [];
         for (const property in data) {
             components.push((
-                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Col className={style.columnWrapper} xs={24} sm={24} md={12} lg={12} xl={12}>
                     <Card style={{margin: 7}} title={property}>
                         {data[property].projects.map(project => (
                             <div>

@@ -73,7 +73,7 @@ const TimeLine = (props) => {
 
 
     return (
-        <Timeline reverse pending="To be continute..." mode="left">
+        <Timeline reverse mode="left">
             {getComponentsTimelineItem()}
         </Timeline>
     )

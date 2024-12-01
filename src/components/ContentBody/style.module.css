@@ -1,66 +1,95 @@
+@media print {
+  /* Remove background or borders causing the white rectangle */
+  .container * {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure content fills the page */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .avatar {
+    width: 70% !important;
+  }
+
+  .printNoBreak {
+    page-break-inside: avoid;
+  }
+}
+
 .container {
-    background-color: transparent;
-    padding-top: 20vh;
+  background-color: transparent;
+  padding-top: 20vh;
 }
 
 .badgeContainer {
-    background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
 .avatar {
-    width: 100%;
+  width: 100%;
 }
 
 .introduceName span {
-    font-size: 25px;
-    font-weight: bold;
-    margin-right: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .introduceName span:nth-child(2) {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .jobTitle {
-    font-size: 18px;
-    font-weight: 450;
+  font-size: 18px;
+  font-weight: 450;
 }
 
 .iconList {
-    float: right;
+  float: right;
 }
 
 .backToTop {
-    line-height: '40px';
-    border-radius: 4px;
-    background-color: var(--color-secondary);
-    color: var(--color-text-secondary);
-    text-align: 'center';
-    font-size: 30px;
+  line-height: "40px";
+  border-radius: 4px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  text-align: "center";
+  font-size: 30px;
+}
+
+.printButton {
+  line-height: "40px";
+  border-radius: 4px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  text-align: "center";
+  font-size: 30px;
+  bottom: 100px !important;
 }
 
 .introWrapper {
-    padding: 10px
+  padding: 10px;
 }
 
 .objectiveWrapper {
-    padding: 10px;
+  padding: 10px;
 }
 
 .techTag {
-    margin: 5px;
+  margin: 5px;
 }
 
 .techTag svg {
-    width: 1rem;
-    height: 1rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .techTag .anticon {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
-
-
-

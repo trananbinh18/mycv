@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './style.module.css'
 import CardWrapper from '../CardWrapper'
-import { Row, Col, Divider, Badge, Avatar, Space, Tag, Card } from 'antd'
+import { Row, Col, Divider, Badge, Avatar, Space, Tag, BackTop } from 'antd'
 import Icon from "@ant-design/icons"
 import TableContent from '../TableContent'
 import { GithubOutlined, MailOutlined, PhoneOutlined, LinkedinOutlined, SkypeOutlined } from '@ant-design/icons'
@@ -11,11 +11,8 @@ import { colorSecondary, colorTextSecondary } from '../../vars.module.css'
 import TimeLine from '../TimeLine'
 import { imageUrlData, tableData, objectiveData, timeLineData, phoneNumberData, emailData, gitHubLinkData, linkedInLinkData, skypeLinkData, languageSkills, toolSkills, beginnerSkills, petProjects } from '../../data'
 import { iconMap } from "../../iconMap.js"
-import { BackTop } from 'antd';
-import { VerticalAlignTopOutlined } from '@ant-design/icons';
+import { VerticalAlignTopOutlined, PrinterOutlined } from '@ant-design/icons';
 import PetProjectContent from '../PetProjectContent'
-
-
 
 
 
@@ -34,8 +31,10 @@ const ContentBody = () => {
 
             {/* intro section÷ */}
 
+            <div className={style.printNoBreak}>
+
             <CardWrapper>
-                <Badge.Ribbon className={style.badgeContainer} text="Hello & Welcome">
+                <Badge.Ribbon className={`${style.badgeContainer} ${style.printNoBreak}`} text="Hello & Welcome">
 
 
                     <Row>
@@ -88,14 +87,16 @@ const ContentBody = () => {
 
                 </Badge.Ribbon>
             </CardWrapper>
+            </div>
 
+            <div className={style.printNoBreak}>
 
             {/* Skill section÷ */}
 
             <SectionTitle title="SKILL" />
 
             <CardWrapper>
-                <Row>
+                <Row className={style.printNoBreak}>
                     <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                         <div className={style.objectiveWrapper}>
                             {objectiveData}
@@ -121,26 +122,36 @@ const ContentBody = () => {
 
             </CardWrapper>
 
+            </div>
+
 
             {/* Education and work */}
 
-            <SectionTitle title="WORK EXPERIENCE" />
+            <div className={style.printNoBreak}>
+                <SectionTitle title="WORK EXPERIENCE" />
 
-            <CardWrapper>
-                <TimeLine color={colorSecondary} data={timeLineData} />
-            </CardWrapper>
+                <CardWrapper>
+                    <TimeLine color={colorSecondary} data={timeLineData} />
+                </CardWrapper>
+            </div>
 
             {/* PET Project  */}
-            <SectionTitle title="PET PROJECTS" />
+            <div className={style.printNoBreak}>
+                <SectionTitle title="PET PROJECTS" />
 
-            <CardWrapper>
-                <PetProjectContent data={petProjects}/>
-            </CardWrapper>
+                <CardWrapper>
+                    <PetProjectContent data={petProjects} />
+                </CardWrapper>
+            </div>
 
 
             <BackTop className={style.backToTop}>
                 <VerticalAlignTopOutlined />
             </BackTop>
+
+            <div onClick={() => window.print()} class={`ant-back-top ${style.printButton}`}>
+                <PrinterOutlined />
+            </div>
         </div>
     )
 }

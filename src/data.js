@@ -1,4 +1,4 @@
-export const phoneNumberData = "+84 000 00 0000";
+export const phoneNumberData = "090 308 9143";
 
 export const emailData = "trananbinh18@gmail.com";
 
@@ -10,10 +10,10 @@ export const linkedInLinkData =
   "https://www.linkedin.com/in/binh-tran-47566b1aa";
 
 export const imageUrlData =
-  "https://scontent.fsgn8-3.fna.fbcdn.net/v/t31.18172-8/28061080_1565505990235950_3845251402004657671_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=brjXVrIBT64AX_Si-Im&tn=Ngh6Xh50_AkXQmWQ&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfCmuim8H4eksoPGGhk36z0Jx3bQcZFb3XdTcGsP9T3k3A&oe=641C3D1E";
+  "/avatar.jpeg";
 
 export const tableData = {
-  DoB: "01/01/1997",
+  DoB: "21/08/1997",
   Address: "None",
   Email: emailData,
   Phone: phoneNumberData,
@@ -60,10 +60,6 @@ export const educationData = {
 };
 
 export const timeLineData = {
-  "Join Assure Global Group as Developer": {
-    type: "Work",
-    time: "27/08/2019 ~ 05/08/2021",
-  },
   "Project: Wojit Website": {
     type: "Project",
     teamSize: 6,
@@ -101,10 +97,11 @@ export const timeLineData = {
     ],
   },
 
-  "Join Altsource software as Full-stack Developer": {
+  "Join Assure Global Group as Developer": {
     type: "Work",
-    time: "27/09/2021 ~ 15/05/2023",
+    time: "05/08/2021 ~ 27/08/2019",
   },
+
   "Project: Northwest Distribution": {
     type: "Project",
     teamSize: 6,
@@ -156,9 +153,10 @@ export const timeLineData = {
     ],
   },
 
-  "Join Blogic Systems as Backend Developer": {
+
+  "Join Altsource software as Full-stack Developer": {
     type: "Work",
-    time: "01/06/2023 ~ now",
+    time: "15/05/2023 ~ 27/09/2021",
   },
 
   "Project: Sensa Booking APIs": {
@@ -291,6 +289,12 @@ export const timeLineData = {
       "Select multiple records > 200 records by IDs",
     ],
     tech: [".NET", "MSSQL"],
+  },
+
+
+  "Join Blogic Systems as Backend Developer": {
+    type: "Work",
+    time: "Now ~ 01/06/2023",
   },
 };
 

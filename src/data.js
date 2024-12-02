@@ -14,7 +14,7 @@ export const imageUrlData =
 
 export const tableData = {
   DoB: "21/08/1997",
-  Address: "None",
+  Address: "Ho Chi Minh City",
   Email: emailData,
   Phone: phoneNumberData,
 };

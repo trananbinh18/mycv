@@ -1,4 +1,17 @@
 @import './vars.module.css';
+
+@media print {
+    .anticon-project .ant-timeline-item-head {
+        page-break-inside: avoid;
+    }
+    .ant-timeline-item {
+        padding-bottom: 10px !important;
+    }
+    .ant-timeline-item-head  {
+        margin-top: 5px !important;
+    }
+}
+
 .App {
     text-align: center;
 }

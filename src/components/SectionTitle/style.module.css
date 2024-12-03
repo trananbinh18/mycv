@@ -1,3 +1,10 @@
+@media print {
+    .container {
+        margin-top: 25px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
 .container {
     margin-top: 50px;
     margin-bottom: 30px;

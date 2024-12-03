@@ -6,7 +6,7 @@
   }
 
   .printNoBreak {
-    page-break-inside: avoid;
+    page-break-inside: avoid !important;
   }
 }
 

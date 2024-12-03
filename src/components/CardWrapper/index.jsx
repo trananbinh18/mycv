@@ -5,7 +5,7 @@ import { Row, Col } from 'antd'
 const CardWrapper = ({ props, children }) => {
     return (
         <Row justify="center">
-            <Col xs={22} sm={22} md={22} lg={16} xl={16}>
+            <Col className={style.rowContainer} xs={22} sm={22} md={22} lg={16} xl={16}>
                 <div className={style.container}>
                     {children}
                 </div>

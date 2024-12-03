@@ -1,6 +1,20 @@
+@media print {
+    .rowContainer {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+        box-shadow: none !important;
+    }
+}
+
 .container {
     background-color: var(--color-primary);
-    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     padding: 20px;
     text-align: left;
+    border-radius: 5px;
 }
+

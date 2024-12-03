@@ -35,7 +35,7 @@ const TimeLine = (props) => {
 
 
             components.push(
-                <Tooltip title={`${data[property].time} ${property}`} >
+                <Tooltip className={style.printNoBreak} title={`${data[property].time} ${property}`} >
                     <Timeline.Item dot={icon} >
                         {(data[property].type == "Work") ? 
                         (

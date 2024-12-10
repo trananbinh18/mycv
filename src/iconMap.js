@@ -616,6 +616,8 @@ export const iconMap = {
   Typescript: Typescript,
   "EF core": Default,
   "Azure Pipeline": Azure,
+  "Azure": Azure,
+  "Android": Android,
   "Ionic Framework": Ionic,
   "C#": C,
   SOLID: Default,

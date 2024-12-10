@@ -8,6 +8,10 @@
   .printNoBreak {
     page-break-inside: avoid !important;
   }
+
+  .techTag {
+    color: black !important;
+  }
 }
 
 .contentWrapper {

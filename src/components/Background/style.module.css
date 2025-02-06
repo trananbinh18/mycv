@@ -1,3 +1,10 @@
+@media print {
+    .container {
+        display: none !important;
+    }
+    
+}
+
 .container {
     background-color: var(--color-background-primary);
     top: 0;

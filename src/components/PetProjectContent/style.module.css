@@ -4,7 +4,34 @@
     .columnWrapper {
       page-break-inside: avoid;
     }
+
+    .iconLink {
+        display: none !important;
+    }
+
+    .content {
+        display: none !important;
+    }
+
+    .card {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .item {
+        float: right !important;
+        margin-right: 20px !important;
+    }
+    .printOnlyNotes{
+        font-style: italic !important; 
+        padding: 7px !important;
+        display: block !important;
+    }
   }
+
+.printOnlyNotes {
+    display: none;
+}
 
 .icon svg {
     width: 1.5rem;

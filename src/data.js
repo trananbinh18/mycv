@@ -13,7 +13,7 @@ export const imageUrlData =
   "/avatar.jpeg";
 
 export const tableData = {
-  DoB: "21/08/1997",
+  DoB: "XX/XX/1997",
   Address: "Ho Chi Minh City",
   Email: emailData,
   Phone: phoneNumberData,
@@ -44,7 +44,7 @@ export const languageSkills = [
   "Android",
 ];
 
-export const toolSkills = ["Jenkins", "Docker", "Ubuntu", "Nginx"];
+export const toolSkills = ["Jenkins", "Docker", "Ubuntu", "Nginx", "RabbitMQ", "Raspberry Pi"];
 
 export const beginnerSkills = ["AWS", "Azure"];
 
@@ -221,10 +221,10 @@ export const timeLineData = {
     content: [
       "POS is a project having 10 year life time, it allow users can manage their restaurant menu, POS is handle locally and independence. Menu Builder APIs initial by requirements help user can edit their menu directly on website without need to access to local.",
       "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, security",
-      "Handle sync large data from local to server",
-      "Handle rollback",
-      "Reduce in-memory resources, request payload",
+      "Handle sync large data from local to server, rollback",
+      "Optimize in-memory resources, request payload",
       "Integrate with AWS S3 + CDN Cloud Front",
+      "Handle Integration with message queue RabbitMQ throw mTLS"
     ],
     tech: [
       ".NET",
@@ -236,6 +236,7 @@ export const timeLineData = {
       "Winform",
       "AWS",
       "AutoMapper",
+      "RabbitMQ"
     ],
   },
   "Project: Giftcard and SMS APIs": {
@@ -267,6 +268,7 @@ export const timeLineData = {
       "Support multiple authorized type JWT RSA256, API keys, stateful sessions",
       "Authenticate and Authorize",
       "Handle account cross multiple systems",
+      "Create OAuth2.0 authorization for 3rd parties"
     ],
     tech: [
       ".NET",

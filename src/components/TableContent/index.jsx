@@ -24,7 +24,7 @@ const TableContent = (props) => {
 
 
     return (
-        <div>
+        <div className={style.container}>
             {getComponentsField()}
         </div>
     )

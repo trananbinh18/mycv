@@ -12,6 +12,31 @@
   .techTag {
     color: black !important;
   }
+
+  .contentWrapper {
+    padding: 5px !important;
+  }
+
+  .contentHeaderWork {
+    margin-top: 10px !important;
+    padding: 5px !important;
+  }
+
+  .contentHeaderWork .time {
+    border: none !important;
+  }
+
+  .contentHeader .time {
+    border: none !important;
+    color: var(--color-secondary) !important;
+  }
+
+  .contentHeader .title {
+    margin-top: 7px !important;
+    margin-bottom: 4px !important;
+    font-weight: bold;
+  }
+
 }
 
 .contentWrapper {

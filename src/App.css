@@ -10,6 +10,26 @@
     .ant-timeline-item-head  {
         margin-top: 5px !important;
     }
+
+    .ant-divider-horizontal {
+        margin: 7px 0 !important;
+    }
+
+    .ant-card-head .ant-card-head-title {
+        padding: 5px 0 !important;
+    }
+
+    .ant-card-head {
+        border-bottom: none !important;
+    }
+
+    .ant-card-bordered {
+        border: none !important;
+    }
+
+    .ant-card .ant-card-body {
+        padding: 7px !important;
+    }
 }
 
 .App {

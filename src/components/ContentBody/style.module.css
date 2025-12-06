@@ -65,6 +65,9 @@
 
 .avatar {
   width: 100%;
+  filter: grayscale(0%);
+  border-radius: 12px;
+  filter: drop-shadow(8px 8px 10px #646161)
 }
 
 .introduceName span {

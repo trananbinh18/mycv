@@ -70,3 +70,7 @@
         transform: rotate(360deg);
     }
 }
+
+.ant-timeline-item-head-custom {
+    background-color: transparent !important;
+}

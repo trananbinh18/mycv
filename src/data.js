@@ -10,7 +10,7 @@ export const linkedInLinkData =
   "https://www.linkedin.com/in/binh-tran-47566b1aa";
 
 export const imageUrlData =
-  "/avatar.jpeg";
+  "/avatar.png";
 
 export const tableData = {
   DoB: "XX/XX/1997",
@@ -166,7 +166,6 @@ export const timeLineData = {
     content: [
       "A booking platform for nail and beauty salons. It allows customers to book appointments online, and salons to manage their business.",
       "Implement APIs for web/app clients",
-      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, usability",
       "Handle backgrounds and schedule jobs",
       "Implement CI/CD by jenkins",
     ],
@@ -193,52 +192,6 @@ export const timeLineData = {
     ],
     tech: ["Java", "Android SDK", "PAX"],
   },
-  "Project: POS Express APIs": {
-    type: "Project",
-    time: "12/10/2023",
-    teamSize: 6,
-    content: [
-      "A project to manage payment transactions and employees, profit statistic report base on processed transactions",
-      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, security",
-      "Archive to support up to 2,000 concurrent users",
-      "Implement authentication và authorization",
-      "Implement CI/CD by jenkins",
-    ],
-    tech: [
-      ".NET",
-      "ASP.NET",
-      "Dapper",
-      "MSSQL",
-      "AutoMapper",
-      "Docker",
-      "Jenkins",
-    ],
-  },
-  "Project: Data center menu builder APIs": {
-    type: "Project",
-    time: "15/11/2023",
-    teamSize: 7,
-    content: [
-      "POS is a project having 10 year life time, it allow users can manage their restaurant menu, POS is handle locally and independence. Menu Builder APIs initial by requirements help user can edit their menu directly on website without need to access to local.",
-      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, security",
-      "Handle sync large data from local to server, rollback",
-      "Optimize in-memory resources, request payload",
-      "Integrate with AWS S3 + CDN Cloud Front",
-      "Handle Integration with message queue RabbitMQ throw mTLS"
-    ],
-    tech: [
-      ".NET",
-      "ASP.NET",
-      "Dapper",
-      "MSSQL",
-      "Docker",
-      "Jenkins",
-      "Winform",
-      "AWS",
-      "AutoMapper",
-      "RabbitMQ"
-    ],
-  },
   "Project: Giftcard and SMS APIs": {
     type: "Project",
     time: "15/11/2023",
@@ -264,7 +217,8 @@ export const timeLineData = {
     time: "22/04/2024",
     teamSize: 7,
     content: [
-      "Centralized Authentication systems, provide credentials cross multiple systems",
+      "Centralized Authentication systems, provide credentials cross multiple systems, think is as keycloak but lightweight and custom made",
+      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, security, scalability",
       "Support multiple authorized type JWT RSA256, API keys, stateful sessions",
       "Authenticate and Authorize",
       "Handle account cross multiple systems",
@@ -293,10 +247,91 @@ export const timeLineData = {
     tech: [".NET", "MSSQL"],
   },
 
+  "Project: Data Center APIs": {
+  type: "Project",
+  time: "03/05/2024",
+  teamSize: 7,
+  content: [
+    "Centralize storage transactions/batches for report, support 2000+ concurrent devices with tracing and logging solutions",
+    "Design to archive functional requirement and non-functional requirements: maintainability, reliability, performance, security",
+    "Build report logic to calculate income, employees income, and related financial statistics",
+    "Handle retry failed cases",
+    "Handle and manage receipt printing templates",
+    "Handle integration with message queue RabbitMQ through mTLS",
+    "Implement authentication and authorization multiple schemes",
+    "Optimize in-memory resources and request payload"
+  ],
+  tech: [
+    ".NET",
+    "ASP.NET",
+    "Dapper",
+    "MSSQL",
+    "Docker",
+    "Jenkins",
+    "AutoMapper",
+    "RabbitMQ"
+  ]
+},
+
+"Project: Menu Builder APIs": {
+  type: "Project",
+  time: "22/01/2025",
+  teamSize: 7,
+  content: [
+    "POS is a project having 10 year life time, it allows users to manage their restaurant menu locally and independently, Menu Builder APIs initialized to allow users to edit their menu directly on website",
+    "Design to archive functional requirement and non-functional requirements: maintainability, scalability, availability, performance, security",
+    "Handle complex business logic and backward compatibility",
+    "Implement Tailscale tunnels with reverse proxy design for large scalability potential",
+    "Reduce business cost/fee as much as possible with fewer but effective components"
+  ],
+  tech: [
+    ".NET",
+    "ASP.NET",
+    "Dapper",
+    "MSSQL",
+    "Docker",
+    "Jenkins",
+    "AutoMapper",
+    "AWS",
+    "RabbitMQ",
+    "Tailscale"
+  ]
+  },
 
   "Join Blogic Systems as Backend Developer": {
     type: "Work",
     time: "Now ~ 01/06/2023",
+  },
+
+  
+
+  "Project: DSS": {
+    type: "Project",
+    time: "2025",
+    teamSize: 5,
+    content: [
+      "DSS is a wholesale product brokerage platform for retailers (SD), distributors (MD), and the DSS marketplace",
+      "Design to archive functional requirement and non-functional requirements: maintainability, reliability, availability, performance, security",
+      "Intended to support 1000+ users",
+      "Works similarly to e-commerce platforms like Shopee or Lazada but with customized business logic",
+      "Build complex stock management and product modifiers across multiple stocks",
+      "Handle promotion programs across all organizations (MD, DSS)",
+      "Integrate SePay payment gateway through IPN, BankHub, QR code payments",
+    ],
+    tech: [
+      ".NET",
+      "ASP.NET",
+      "MSSQL",
+      "Hangfire",
+      "EF core",
+      "Docker",
+      "SePay"
+    ],
+  },
+
+  "Side projects": {
+    type: "Work",
+    time: "Now",
   },
 };
 

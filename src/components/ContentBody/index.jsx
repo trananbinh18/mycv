@@ -13,6 +13,7 @@ import { imageUrlData, tableData, objectiveData, timeLineData, phoneNumberData, 
 import { iconMap } from "../../iconMap.js"
 import { VerticalAlignTopOutlined, PrinterOutlined, ReadFilled } from '@ant-design/icons';
 import PetProjectContent from '../PetProjectContent'
+import PhysicsTagCloud from '../PhysicsTagCloud/PhysicsTagCloud'
 
 
 
@@ -64,7 +65,7 @@ const ContentBody = () => {
 
                         <Row>
                             <Col xs={24} sm={24} md={24} lg={10} xl={10}>
-                                <img className={style.avatar} src={imageUrlData} />
+                                <PhysicsTagCloud imageUrl={imageUrlData} tags={toolSkills.concat(languageSkills)} />
                             </Col>
 
                             <Col xs={24} sm={{ span: 24, offset: 0 }} md={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 2 }} xl={{ span: 12, offset: 2 }} >

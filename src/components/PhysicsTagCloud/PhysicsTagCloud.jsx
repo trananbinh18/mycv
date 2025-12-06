@@ -115,9 +115,10 @@ const PhysicsTagCloud = ({ imageUrl, tags }) => {
         width: "100%",
         height: "400px",
         borderRadius: "16px",
-        overflow: "hidden",
+        overflow: "visible",
         backgroundImage: `url(${imageUrl})`,
-        backgroundSize: "cover",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
     >
@@ -135,20 +136,4 @@ const PhysicsTagCloud = ({ imageUrl, tags }) => {
     </div>
   );
 };
-
-{/* <span
-          key={tag + index}
-          ref={(el) => (tagRefs.current[index] = el)}
-          style={{
-            padding: "6px 12px",
-            borderRadius: "999px",
-            background: "rgba(0,0,0,0.7)",
-            color: "#fff",
-            fontSize: "12px",
-            whiteSpace: "nowrap",
-            userSelect: "none",
-          }}
-        >
-          {tag}
-        </span> */}
 export default PhysicsTagCloud;

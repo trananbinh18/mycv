@@ -331,7 +331,7 @@ export const timeLineData = {
 
   "Side projects": {
     type: "Work",
-    time: "Now",
+    time: "2025",
   },
 };
 

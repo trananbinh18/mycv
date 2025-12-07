@@ -14,3 +14,13 @@
   vertical-align: middle;
   line-height: normal;
 }
+
+@media print {
+  .container {
+    display: none;
+  }
+  
+  .techTag {
+    display: none;
+  }
+} 

@@ -121,6 +121,7 @@ const PhysicsTagCloud = ({ imageUrl, tags }) => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
+      className={style.container}
     >
       {tags.map((tag, index) => (
         
